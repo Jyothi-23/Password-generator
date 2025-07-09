@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #2d3436;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #6c5ce7;
+  font-size: 1.8rem;
+}
+
+.password-box {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #dfe6e9;
+}
+
+#password {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  background: white;
+}
+
+#password:focus {
+  outline: 2px solid #6c5ce7;
+}
+
+#copy-btn {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 0 1.2rem;
+  cursor: pointer;
+}
+
+#copy-btn:hover {
+  background: #5649c0;
+}
+
+.settings {
+  margin-bottom: 1rem;
+}
+
+.length {
+  margin-bottom: 1.5rem;
+}
+
+.length label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+#length-slider {
+  width: 100%;
+  height: 8px;
+  
+  background: #dfe6e9;
+  border-radius: 4px;
+  outline: none;
+}
+
+#length-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #6c5ce7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.options input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #6c5ce7;
+  cursor: pointer;
+}
+
+.strength {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.strength-weak {
+  color: #d63031;
+}
+
+.strength-medium {
+  color: #fdcb6e;
+}
+
+.strength-strong {
+  color: #00b894;
+}
+
+#generate-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#generate-btn:hover {
+  background: #5649c0;
+}
+
+@media (max-width: 480px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    padding: 1.5rem;
+  }
+}
